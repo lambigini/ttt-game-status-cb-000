@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 [0,4,8], #Diagnonals
 [2,4,6],
 ]
-def won(board)
+def won?(board)
     WIN_COMBINATIONS.each do |index_array|
       index_array.each do |win_combination|
         win_index_1 = win_combination[0]
