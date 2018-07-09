@@ -14,7 +14,7 @@ WIN_COMBINATIONS = [
 [2,5,8],
 
 [0,4,8], #Diagnonals
-[2,4,6],
+[2,4,6]
 ]
 def won?(board)
     WIN_COMBINATIONS.each do |index_array|
