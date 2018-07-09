@@ -17,17 +17,9 @@ WIN_COMBINATIONS = [
 [2,4,6]
 ]
 def won?(board)
-    WIN_COMBINATIONS.each do |win_combination|
-      win_combination.each do |win_index|
-
-        position_1 = board[win_index] # load the value of the board at win_index_1
-        position_2 = board[win_index]
-        position_3 = board[win_index]
-        if position_1 == "X" && position_2 == "X" && position_3 == "X"
-          return win_combination
-        else
-          return false
-        end
-      end
-    end
+    WIN_COMBINATIONS.detect do |combo|
+      board[combo[0]] == board[combo[1]] && board [combo[1]] == board[combo[2]] && 
+      position_taken?(board,combo[0])
 end
+end
+
