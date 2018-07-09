@@ -6,7 +6,7 @@ end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
 [0,1,2], #Top rows
-[3,4,5], 
+[3,4,5],
 [6,7,8],
 
 [0,3,6], #Top columns
